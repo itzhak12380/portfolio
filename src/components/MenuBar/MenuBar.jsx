@@ -1,7 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngry, faHome, faUser, faUserGraduate, faBriefcase, faBook, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {Link,NavLink} from 'react-router-dom'
+import { faAngry, faHome,faArrowCircleDown, faArrowCircleUp, faUser, faUserGraduate, faBriefcase, faBook, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Sidebar = styled.div`
 /* height: fit-content;
 width:40px ; */
@@ -42,17 +43,26 @@ const IconsArray = [
 
 function MenuBar({ currentScreen, selectScreen }) {
   return (
+    <>
     <Sidebar className="menu-bar">
       <div style={{ width: "fit-content" }}>
         {IconsArray.map
           (({icon, id}) => {
             const style = { width: "50%", borderRadius: "50%", color: id === currentScreen ? "green" : ""  };
-            return (<Botton onClick={() => {
-              selectScreen(id)
-            }}><FontAwesomeIcon className="myfont" style={style} icon={icon}></FontAwesomeIcon></Botton>)
+            return (<NavLink   activeStyle={{
+              fontWeight: "bold",
+              color: "green"
+            }}
+           to={`/${id}`} ><FontAwesomeIcon className="myfont" style={style} icon={icon}></FontAwesomeIcon></NavLink>)
           })}
       </div>
     </Sidebar>
+            <div>
+            <NavLink to=""><FontAwesomeIcon style={{ width: "100%" }} icon={faArrowCircleDown} /></NavLink>
+           <NavLink to=""><FontAwesomeIcon style={{ width: "100%" }} icon={faArrowCircleUp} />
+           </NavLink>
+          </div>
+          </>
   );
 };
 

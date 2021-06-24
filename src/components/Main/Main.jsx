@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import Rigthside from '../RightSide/RightSide.jsx'
 import MenuBar from '../MenuBar/MenuBar.jsx'
 import { useState } from "react";
+import Home from "../RightSideContent/Home/Home";
 import AboutMe from "../RightSideContent/About-me/About-me";
 import Leftside from '../LeftSide/LeftSide.jsx'
+import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleDown, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 const MainDivLayout = styled.div`
@@ -74,27 +76,28 @@ function NotFound() {
 }
 
 export default function Main() {
-  const [currentScreen, setCurrentScreen] = useState("home");
-  const ScreenComponent = screenIdToComponent[currentScreen] || NotFound;
  
   return (
+    <Router>
     <MainDivLayout className="main">
+   
       <LeftSideLayout>
         <Leftside />
       </LeftSideLayout>
       <RightSideLayout>
-       <ScreenComponent />
+         <Switch>
+       <Route path="/home">
+        <Home/>
+       </Route>
+       <Route>
+       <NotFound />
+       </Route>
+       </Switch>
       </RightSideLayout>
       <SidebarLayout >
-        <MenuBar selectScreen={setCurrentScreen} currentScreen={currentScreen} />
-        <div>
-          <FontAwesomeIcon style={{ width: "100%" }} icon={faArrowCircleDown}><button></button>
-          </FontAwesomeIcon>
-          <FontAwesomeIcon style={{ width: "100%" }} icon={faArrowCircleUp}><button></button>
-          </FontAwesomeIcon>
-        </div>
+        <MenuBar />
       </SidebarLayout>
-    </MainDivLayout>
+    </MainDivLayout></Router>
   );
 };
 // const Sidebar = styled.div`

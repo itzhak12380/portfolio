@@ -12,7 +12,7 @@ height: 20%;
 border-radius: 50%;
 `
 
-function LeftSide() {
+function LeftSideHbrow() {
   return (
     <Leftside className="left-side">
       <MyImg src="https://images.pexels.com/photos/1289845/pexels-photo-1289845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
@@ -21,4 +21,12 @@ function LeftSide() {
   );
 };
 
-export default LeftSide;
+export default LeftSideHbrow;
+export function LeftSideEnglish(){
+  return(
+    <Leftside className="left-side">
+      <MyImg src="https://images.pexels.com/photos/1289845/pexels-photo-1289845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+    <h2> Itzhak Kasie</h2>
+    </Leftside>
+  )
+}

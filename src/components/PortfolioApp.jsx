@@ -80,7 +80,7 @@ export default function PortfolioApp(){
           <Footer style={{ backgroundColor: COLORobj.Footer,opacity:'0.7'  }}>  <a style={{ color: "#4267B2" }} target='blank' href="https://www.facebook.com/iascc.kasay/"><FaFacebook />  </a>
             <a style={{ color: "#FD1D1D" }} target='blank' href="https://www.instagram.com/itzhak_kasie17/"><FaInstagram /> </a>
             <a style={{ color: "#2867B2" }} target='blank' href="https://www.linkedin.com/in/itzhak-kasie-01457b203/"> <FaLinkedin /></a>
-            <a style={{ color: "#2867B2" }} target='blank' href="https://github.com/itzhak12380"> <FaGithub/> </a>
+            <a style={{ color: "#2867B2" }} target='blank' href="https://github.com/itzhak12380"> <FaGithub/>  </a>
             
           </Footer>
         </CONTAINERDIV>

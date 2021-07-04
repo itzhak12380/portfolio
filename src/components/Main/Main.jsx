@@ -1,7 +1,7 @@
 import React from "react";
 import './Main.css'
 import styled from 'styled-components';
-import MenuBar from '../MenuBar/MenuBar.jsx'
+import Sidebar from '../MenuBar/MenuBar.jsx'
 import { useState,createContext,useMemo } from "react";
 import { HebrowContent,EnglishContent } from "../RightSideContent/PortfolioContent/index";
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
@@ -122,7 +122,7 @@ export default function Main() {
        </Switch>
       </RightSideLayout>
       <SidebarLayout style={{backgroundColor:ColoModeController.sidebar}} >
-        <MenuBar Iconolor={ColoModeController.icon} />        
+        <Sidebar Iconolor={ColoModeController.icon} />        
         <Switches style={{backgroundColor:'red'}} ChnageLanguage={ColoModeController.body} Language="change color" />
         <Switches ChnageLanguage={ChangeLanguage} Language={LanguageState.Button} />
       </SidebarLayout>

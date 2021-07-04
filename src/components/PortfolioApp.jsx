@@ -4,6 +4,7 @@ import Main from './Main/Main';
 import { NIGHMODE,DAYMODE } from './RightSideContent/PortfolioContent';
 import { PROVIDECONTEXT } from './RightSideContent/contexthook';
 import { FaFacebook, FaInstagram, FaLinkedin,FaGithub } from 'react-icons/fa';
+import Header from './Header/Header';
   const CONTAINERDIV = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,18 +12,18 @@ import { FaFacebook, FaInstagram, FaLinkedin,FaGithub } from 'react-icons/fa';
   width: 100vw;
   height: 100vh;
   `
-  const PROGRAM = styled.img`
-width: 20px;
-height: 20px;
-border-radius: 50%;
-margin-top: 5px;
-`
-  const Header = styled.header`
-display: flex;
-justify-content: center;
-justify-content:space-evenly;
-color: white;
-`
+//   const PROGRAM = styled.img`
+// width: 20px;
+// height: 20px;
+// border-radius: 50%;
+// margin-top: 5px;
+// `
+//   const Header = styled.header`
+// display: flex;
+// justify-content: center;
+// justify-content:space-evenly;
+// color: white;
+// `
 
   const Footer = styled.footer`
 height: 5%;
@@ -68,12 +69,7 @@ export default function PortfolioApp(){
 
     return (
         <CONTAINERDIV style={{ backgroundColor: COLORobj.bodyColor, color: COLORobj.Color }} >
-          <Header style={{ backgroundColor: COLORobj.Headr, width: '100%',opacity:'0.7' }}>
-            <a target="blank" href="https://tech-career-jobs.com/"><PROGRAM src="./Pictures/indicom.jpg" alt="" /></a>
-            <span>Email: itzhak2380@gmail.com</span>
-            <a target="blank" href="https://tech-career-jobs.com/"><PROGRAM src="./Pictures/tech.jpg" alt="" /></a>
-    
-          </Header>
+          <Header HeaderColor={COLORobj.Headr}/>
           <div style={{ height: '90%', width: '100%', display: 'flex', justifyContent: 'center' }}>
             <PROVIDECONTEXT value={COLORobj}>
     

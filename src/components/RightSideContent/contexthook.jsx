@@ -1,6 +1,6 @@
 import React, { useState,useContext, createContext } from 'react'
 
-export const CREATCONTEXT = createContext();
+ const CREATCONTEXT = createContext();
 export const PROVIDECONTEXT = CREATCONTEXT.Provider
 
 export function UseMyContext() {

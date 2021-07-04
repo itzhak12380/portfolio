@@ -1,14 +1,13 @@
 import React from "react";
 import './Main.css'
 import styled from 'styled-components';
-import Sidebar from '../MenuBar/MenuBar.jsx'
+import Sidebar from '../features/SideBar/SideBar.jsx'
 import { useState,createContext,useMemo } from "react";
 import { HebrowContent,EnglishContent } from "../RightSideContent/PortfolioContent/index";
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import { Switches } from "../RightSideContent/PortfolioContent/AboutMe";
 import { UseMyContext } from "../RightSideContent/contexthook";
-import { EnglishPortfolio } from "../RightSideContent/PortfolioContent/PortfolioContent";
-import { ContactPage } from "../RightSideContent/PortfolioContent/ContactUs";
+import Button from "../features/Button/Button";
 const MainDivLayout = styled.div`
 width:85%;
 height:85% ;
@@ -50,17 +49,6 @@ flex-direction: column;
 justify-content: space-between;
 `
 
-// {icon: faHome, id: "home"},
-// { icon: faUser, id: "user"},
-// { icon: faUserGraduate, id: "graduate"},
-// { icon: faBriefcase, id: "briefcase"},
-// { icon: faEnvelope, id: "envelope"},
-// { icon: faUser, id: "user2"},
-// const screenIdToComponent = {
-//   home: Rigthside,
-//   user: AboutMe,
-// };
-
 function NotFound() {
   return <div>Not found</div>;
 }
@@ -89,22 +77,16 @@ export default function Main() {
     <MainDivLayout  style={{backgroundColor:ColoModeController.MainDiv}} className="main">
    
       <LeftSideLayout style={{backgroundColor:ColoModeController.LeftSide}} >
-        {/* <Leftside /> */}
         <LanguageState.LeftSide/>
-        {/* {LanguageState.LeftSide()} */}
       </LeftSideLayout>
       <RightSideLayout style={{backgroundColor:ColoModeController.RightSide}}>
          <Switch>
-       <Route className="animate__backInLeft" path="/home">
-        
-          <LanguageState.Home/>
-       
-        {/* <PageComponent /> */}
+       <Route  path="/home">        
+          <LanguageState.Home/>      
        </Route>
        <Route path="/AboutMe">
-         <div className="animate__backInLeft"> <LanguageState.AboutMe /> </div>
+         <LanguageState.AboutMe /> 
          
-         {/* <PageComponent Componenta={LanguageState.Resume()}/> */}
        </Route>
        <Route path="/ContactPage">
          <LanguageState.ContactUs />
@@ -113,7 +95,6 @@ export default function Main() {
          <LanguageState.Portfolio/>
        </Route>
        <Route path="/ResumePage">
-          {/* <ResumePage/> */}
           <LanguageState.Resume />
        </Route>
        <Route>
@@ -123,7 +104,7 @@ export default function Main() {
       </RightSideLayout>
       <SidebarLayout style={{backgroundColor:ColoModeController.sidebar}} >
         <Sidebar Iconolor={ColoModeController.icon} />        
-        <Switches style={{backgroundColor:'red'}} ChnageLanguage={ColoModeController.body} Language="change color" />
+        <Switches style={{backgroundColor:'red'}} ChnageLanguage={ColoModeController.body} Language={ColoModeController.ButtonText} />
         <Switches ChnageLanguage={ChangeLanguage} Language={LanguageState.Button} />
       </SidebarLayout>
     </MainDivLayout></Router>

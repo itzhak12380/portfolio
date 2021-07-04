@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Alink from '../../features/Links/Links'
 const CONTAINER = styled.div`
 width: 100%;
 height: 100%;
@@ -27,7 +27,7 @@ justify-content: space-between;
  function PortfolioCard(props){
     return(
         <div style={{width:'32%'}}>
-            <a href={props.Link} target="blank"><IMGSTYLE src={props.photo} alt="" /></a>
+            <Alink href={props.Link} content={<IMGSTYLE src={props.photo} alt="" />} target="blank"></Alink>
             <br />
             <span>{props.name}</span>
         </div>

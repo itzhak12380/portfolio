@@ -177,7 +177,7 @@ export function EnglishResume() {
                 </LEFTSIDE>
                 <RIGHTSIDE>
                     <h4>Coding Skils</h4>
-
+                        <h4>client side</h4>
                     <SkilBarStyle  >
                         <span> HTML </span>
                         <span>98% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
@@ -192,59 +192,21 @@ export function EnglishResume() {
 
                     <SkilBarStyle>
                         <span> javascript </span>
-                        <span>85% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={85} />
-                    <SkilBarStyle>
-                        <span> C# </span>
-                        <span>70% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={70} />
-                    <SkilBarStyle>
-                        <span> React </span>
-                        <span>82% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={82} />
-                    <SkilBarStyle>
-                        <span> Node Js </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={0} />
-                    <SkilBarStyle>
-                        <span> database </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={0} />
-
-                    <h4>Design Skils</h4>
-
-                    <SkilBarStyle>
-                        <span> HTML </span>
-                        <span>98% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={100} />
-
-                    <SkilBarStyle>
-                        <span> css </span>
                         <span>92% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={92} />
-
-                    <SkilBarStyle>
-                        <span> javascript </span>
-                        <span>85% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={85} />
-                    <SkilBarStyle>
-                        <span> C# </span>
-                        <span>70% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={70} />
                     <SkilBarStyle>
                         <span> React </span>
                         <span>82% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={82} />
+                    <h4>server side</h4>
+                    <SkilBarStyle>
+                        <span> C# </span>
+                        <span>70% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                    </SkilBarStyle>
+                    <SkilsBar percentage={70} />
+                    
                     <SkilBarStyle>
                         <span> Node Js </span>
                         <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
@@ -252,6 +214,24 @@ export function EnglishResume() {
                     <SkilsBar percentage={0} />
                     <SkilBarStyle>
                         <span> database </span>
+                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                    </SkilBarStyle>
+                    <SkilsBar percentage={0} />
+
+                  
+                    <h4>data base</h4>
+                    <SkilBarStyle>
+                        <span> MongoDB </span>
+                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                    </SkilBarStyle>
+                    <SkilsBar percentage={0} />
+                    <SkilBarStyle>
+                        <span> Angular </span>
+                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                    </SkilBarStyle>
+                    <SkilsBar percentage={0} />
+                    <SkilBarStyle>
+                        <span> Jquery </span>
                         <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={0} />
@@ -379,7 +359,7 @@ export function HebrowResume() {
                     </Timeline>
                 </LEFTSIDE>
                 <RIGHTSIDE>
-                    <h4>כישורי תכנות</h4>
+                    <h4> צד לקוח</h4>
 
                     <SkilBarStyle>
                         <span> HTML </span>
@@ -395,69 +375,44 @@ export function HebrowResume() {
 
                     <SkilBarStyle>
                         <span> גאווה סקריפט </span>
-                        <span>85% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={85} />
-                    <SkilBarStyle>
-                        <span> סי שארפ </span>
-                        <span>70% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={70} />
-                    <SkilBarStyle>
-                        <span> ריאקט </span>
-                        <span>82% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={82} />
-                    <SkilBarStyle>
-                        <span> Node Js </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={0} />
-                    <SkilBarStyle>
-                        <span> database </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={0} />
-
-                    <h4> בישורי עיצוב</h4>
-
-                    <SkilBarStyle>
-                        <span> HTML </span>
-                        <span>98% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={100} />
-
-                    <SkilBarStyle>
-                        <span> css </span>
                         <span>92% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={92} />
-
-                    <SkilBarStyle>
-                        <span> גאווה סקריפט </span>
-                        <span>85% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                        <SkilBarStyle>
+                        <span> ריאקט </span>
+                        <span>82% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
-                    <SkilsBar percentage={85} />
+                    <SkilsBar percentage={82} />
+                    <h4>צד שרת</h4>
                     <SkilBarStyle>
                         <span> סי שארפ </span>
                         <span>70% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={70} />
-                    <SkilBarStyle>
-                        <span> ריאקט </span>
-                        <span>82% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={82} />
+                
                     <SkilBarStyle>
                         <span> Node Js </span>
                         <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={0} />
+                    <h4> מסד נתונים</h4>
                     <SkilBarStyle>
-                        <span> database </span>
+                        <span> מנגו די בי </span>
                         <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={0} />
+                    <SkilBarStyle>
+                        <span> ג'י קווארי </span>
+                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                    </SkilBarStyle>
+                    <SkilsBar percentage={0} />
+                    <SkilBarStyle>
+                        <span> אנגולר  </span>
+                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                    </SkilBarStyle>
+                    <SkilsBar percentage={0} />
+
+                   
 
 
 

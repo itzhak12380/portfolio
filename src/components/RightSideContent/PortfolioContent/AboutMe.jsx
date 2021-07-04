@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDesktop, faFlag,faStore ,faPen} from '@fortawesome/free-solid-svg-icons'
+import { faDesktop, faFlag, faStore, faPen } from '@fortawesome/free-solid-svg-icons'
 import Switch from '@material-ui/core/Switch';
 import { UseMyContext } from '../contexthook';
 
@@ -64,88 +64,84 @@ const PHOTOS = styled.img`
 width: 32%;
 height: 150px;
 `
-export  function Switches(props) {
+export function Switches(props) {
     const SWITCHCOLOR = UseMyContext()
 
     const [state, setState] = React.useState({
-      checkedA: true,
-      checkedB: true,
+        checkedA: true,
+        checkedB: true,
     });
-  
+
     const handleChange = (event) => {
-      setState({ ...state, [event.target.name]: event.target.checked });
+        setState({ ...state, [event.target.name]: event.target.checked });
     };
-  
+
     return (
-      <div >
-        <span>{props.Language}</span>
-        <Switch style={{color:SWITCHCOLOR.SwitchColor}}
-          checked={state.checkedB}
-          onChange={handleChange}
-          onClick={props.ChnageLanguage}
-          color="primery"
-          name="checkedB"
-          inputProps={{ 'aria-label': 'primary checkbox' }}
-        />  
-      </div>
+        <div >
+            <span>{props.Language}</span>
+            <Switch style={{ color: SWITCHCOLOR.SwitchColor }}
+                checked={state.checkedB}
+                onChange={handleChange}
+                onClick={props.ChnageLanguage}
+                color="primery"
+                name="checkedB"
+                inputProps={{ 'aria-label': 'primary checkbox' }}
+            />
+        </div>
     );
-  }
+}
 export function EnglishAboutMe() {
     const TextColor = UseMyContext()
 
     return (
-        <div className="animate__animated animate__backInDown" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <CONTAINER>
-            <AboutME>
-                <h1 >about <BLUTTEXT style={{color:TextColor.TextColor}}>me</BLUTTEXT> </h1>
-                <SPANText style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                    Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue elit vel   odio suscipit, sit amet tempor nisl imperdiet. Quisque ex justo, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum condimentum dictum et vel massa. Ut in imperdiet dolor, vel consectetur dui.
-                </SPANText>
-            </AboutME>
-            <Details>
-                <SPANText>
+        <div className="animate__animated animate__backInDown" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <CONTAINER>
+                <AboutME>
+                    <h1 >about <BLUTTEXT style={{ color: TextColor.TextColor }}>me</BLUTTEXT> </h1>
+                    <SPANText style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                       Hi I am Itzhak Kasie and i am a 22 years old from the city of bat yam i realy love sport especially footbal I like Playing (and i pretty good at it) and watching footbal and  i love doing any kinde of sport i like to run somtimes it clears my minde i like to just sit and drink coffe and hear music for five minuts in the morning
+                    </SPANText>
+                </AboutME>
+                <Details>
+                    <SPANText>
 
-                    <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{color:TextColor.TextColor}}>age</BLUTTEXT> :</h3> <SPANText >23</SPANText>
-                    <br />
-                    <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{color:TextColor.TextColor}}>Residence</BLUTTEXT> :</h3> <SPANText >USA</SPANText>
-                    <br />
-                    <h3 style={{ display: 'inline' }}><BLUTTEXT style={{color:TextColor.TextColor}}>Address</BLUTTEXT>  :</h3> <SPANText >88 Some Street, Some Town</SPANText>
-                    <br />
-                    <h3 style={{ display: 'inline' }}><BLUTTEXT style={{color:TextColor.TextColor}}>e-mail</BLUTTEXT>  :</h3> <SPANText  >email@example.com</SPANText>
-                    <br />
-                    <h3 style={{ display: 'inline' }}><BLUTTEXT style={{color:TextColor.TextColor}}>Phone</BLUTTEXT>  :</h3> <SPANText >0546865601</SPANText>
+                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>age</BLUTTEXT> :</h3> <SPANText >23</SPANText>
+                        <br />
+                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>Residence</BLUTTEXT> :</h3> <SPANText >USA</SPANText>
+                        <br />
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>Address</BLUTTEXT>  :</h3> <SPANText >88 Some Street, Some Town</SPANText>
+                        <br />
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>e-mail</BLUTTEXT>  :</h3> <SPANText  >email@example.com</SPANText>
+                        <br />
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>Phone</BLUTTEXT>  :</h3> <SPANText >0546865601</SPANText>
 
-                  
-                </SPANText>
 
-            </Details>
-            <WhatIDo>
-                <h2 >what <BLUTTEXT style={{color:TextColor.TextColor}}>I Do</BLUTTEXT> </h2>
-            </WhatIDo>
-            <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
-            <h4>web design</h4>
-            <SPANText>On a hot summer day, a fox comes upon an orchard and sees a bunch of ripened grapes. It thinks: “Just what I need to quench my thirst.” It moves back a few paces, runs, and jumps but falls short of reaching the grapes. It tries in different ways to reach the bunch of grapes, but in vain. It finally gives up, and says to himself “I am sure they are sour anyway.”</SPANText>
-             </Roll>
-            <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
-            <h4>Management</h4>
-            <SPANText>Walking alone in the forest, an unlucky fox falls into a well one day. Unable to get out, he waits for help. A passing goat sees the fox and asks him why he is in the well. The cunning fox responds, “there is going to be a great drought, and I am here to make sure I have water.” The gullible goat believes this and jumps into the well. The fox swiftly jumps on the goat and uses its horns to reach the top, leaving the goat in the well. </SPANText>
-             </Roll>
-             <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faStore}></FontAwesomeIcon></BLUTTEXT>
-            <h4>Ecommerce</h4>
-            <SPANText>Tired of the bragging of a speedy hare, a tortoise challenges it to a race. The overconfident hare accepts the competition and runs as fast as it can after the race begins. Soon it gets tired and decides to rest, thinking that there’s plenty of time to relax before tortoise can catch up with it. Meanwhile, the tortoise continues to walk slowly, until it reaches the finish line. The overslept hare wakes up, only to be shocked that a slow moving tortoise beat it in the race. </SPANText>
-             </Roll>
-             <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faPen}></FontAwesomeIcon></BLUTTEXT>
-            <h4>Copywriting</h4>
-            <SPANText>There was once a fisherman whose livelihood depended on his catch. One day, he was able to catch only one small fish. The fish, in its desperation to live, says “Please leave me kind sir. I am small and of no use to you. Let me back into the river and I can grow bigger. You can then catch me and make more money.” The wise fisherman replies, “ I will not give up a certain profit for one that doesn’t exist yet.” </SPANText>
-             </Roll>
-             
-            <PHOTOSCONTAINER>
-                             <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt=""/>
-                             <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt=""/>
-                             <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt=""/>
-            </PHOTOSCONTAINER>
+                    </SPANText>
 
-        </CONTAINER>
+                </Details>
+                <WhatIDo>
+                    <h2 >what <BLUTTEXT style={{ color: TextColor.TextColor }}>I Do</BLUTTEXT> </h2>
+                </WhatIDo>
+                <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
+                    <h4>Software Developer</h4>
+                    <SPANText>
+                        Ever sence my computers intrest started to grow i know that if I will ever Do somthing relating to computers I Know that i will be a developer it was always a dream of mine to desgin and to create a product that will help other people in any possible way 
+                        my biggst dream is to see some family or a friend of mine use somthing that i help build 
+                    </SPANText>
+                </Roll>
+                <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
+                    <h4>Management</h4>
+                    <SPANText>doring my years in the IDF where I served in oketz unit my job was to manage a group of five to four people that wer a civilian workers inside a miltery base i was incharge of assiigning them work and to track problems and assign the workers the fix them as soon as possible i was i charge of the stock and to make sure the workers will allways have tools to work whit so whenever neded I would buy soplie to keep them working </SPANText>
+                </Roll>
+            
+
+                <PHOTOSCONTAINER>
+                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                </PHOTOSCONTAINER>
+
+            </CONTAINER>
         </div>
     )
 }
@@ -154,65 +150,54 @@ export function HebrowAboutMe() {
     const TextColor = UseMyContext()
 
     return (
-        <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <CONTAINER style={{textAlignLast:'left'}} className="animate__animated animate__backInDown">
-            <AboutME>
-                <h1 >על <REDTEXT style={{color:TextColor.TextColor}}>עצמי</REDTEXT> </h1>
-                <SPANText style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                ​למרות שהדיאטנית הטלוויזיונית התזזיתית ג'יליאן מק'קית' העלתה את הקקי על סדר היום הלאומי בסדרה "שינויים בהרגלי הזלילה" (שודרה ב-yes), שבה ביצעה, באופן שגרתי, "ניתוח שלאחר המוות" בקקי של המשתתפים, לא יותר מדי מאיתנו באמת יודעים מה בעצם קורה שם - ומה אומרות עלינו היציאות שלנו.
-                </SPANText>
-            </AboutME>
-            <Details>
-                <SPANText style={{textAlign:'left'}}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <CONTAINER style={{ textAlignLast: 'left' }} className="animate__animated animate__backInDown">
+                <AboutME>
+                    <h1 >על <REDTEXT style={{ color: TextColor.TextColor }}>עצמי</REDTEXT> </h1>
+                    <SPANText style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                        אני יצחק קסיה בן 22 אני מאוד אוהב ספורט במיוחד כדורגל אני אוהב לראות כדורגל ולשחק כדורגל  (ואני די טוב בזה) וחוץ מזה אני אוהב לשחק בכל סוגי הספורט אני אוהב לעשות ריצות לטייל לקרוא ספרים ופשוט לבלות עם משפחה וחברים 
+                    </SPANText>
+                </AboutME>
+                <Details>
+                    <SPANText style={{ textAlign: 'left' }}>
 
-                    <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{color:TextColor.TextColor}}>גיל</BLUTTEXT> :</h3> <SPANText >23</SPANText>
-                    <br />
-                    <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{color:TextColor.TextColor}}>מדינה</BLUTTEXT> :</h3> <SPANText >ישראל</SPANText>
-                    <br />
-                    <h3 style={{ display: 'inline' }}><BLUTTEXT style={{color:TextColor.TextColor}}>כתובת</BLUTTEXT>  :</h3> <SPANText >דליה 2 בת ים</SPANText>
-                    <br />
-                    <SPANText  >email@example.com  :</SPANText><h3 style={{ display: 'inline' }}><BLUTTEXT style={{color:TextColor.TextColor}}> כתובת אימייל</BLUTTEXT> </h3> 
-                    <br />
-                    <h3 style={{ display: 'inline' }}><BLUTTEXT style={{color:TextColor.TextColor}}>טלפון</BLUTTEXT>  :</h3> <SPANText >0546865601</SPANText>
+                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>גיל</BLUTTEXT> :</h3> <SPANText >23</SPANText>
+                        <br />
+                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>מדינה</BLUTTEXT> :</h3> <SPANText >ישראל</SPANText>
+                        <br />
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>כתובת</BLUTTEXT>  :</h3> <SPANText >דליה 2 בת ים</SPANText>
+                        <br />
+                        <SPANText  >email@example.com  :</SPANText><h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}> כתובת אימייל</BLUTTEXT> </h3>
+                        <br />
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>טלפון</BLUTTEXT>  :</h3> <SPANText >0546865601</SPANText>
 
-                  
-                </SPANText>
 
-            </Details>
-            <WhatIDo>
-                <h2 >מה <BLUTTEXT style={{color:TextColor.TextColor}}>אני עושה</BLUTTEXT> </h2>
-            </WhatIDo>
-            <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
-            <h4>עיצוב אתרים</h4>
-            <SPANText  >המורה נכנסת לכיתה ורואה שטר של 100 שקל על ריצפת הכיתה אבל כשהיא מנסה להרים את השטר היא רואה שזה רק ציור. 
-שואלת בעצבים, "מי צייר את זה?"
-קם אחד התלמידים אומר, "אני המורה."
-"עכשיו אני רוצה את אבא שלך פה", היא אומרת.
-"אבל אבא שלי בבית חולים", הוא אומר, "הוא כולו שרוף."
-המורה העצבנית לא מאמינה ואומרת, "אם כך אז בוא נלך לבדוק."
-כשהם מגיעים היא רואה שהאבא באמת שרוף. טוב היא אומרת לעצמה לפחות אני אספר לו בעקיפין אם כבר הגענו, "אתה יודע יש לך ילד כישרוני מאוד, הוא צייר שטר של מאה דולר על ריצפת הכיתה..."
-"אני יודע שהוא מוכשר", מפסיק אותה האבא, "הזבל הזה צייר 200 שקל בשקע של החשמל.</SPANText>
-             </Roll>
-            <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
-            <h4>ניהול</h4>
-            <SPANText>בלונדינית אחת נכנסת לחנות מוצרי חשמל, ניגשת למוכר ושואלת: "סליחה אדוני כמה תעלה לי הטלויזיה הזאת? ומצביעה אז ענה לה המוכר: "סליחה גברת אני לא מוכר לבלונדיניות" לאחר יום חוזרת האישה לחנות כששיערה צבוע לשחור ושואלת: "כמה תעלה לי הטלויזיה הזאת?" אז ענה לה שוב המוכר: "גברת אמרתי לך שאני לא מוכר לבלונדיניות" חזרה הבלונדינית עוד הפעם לאחר שצבעה עוד פעם את השיער ועשתה ניתוחים פלסטיים ושאלה את אותה שאלה, אז ענה לא עוד פעם המוכר שהוא לא מוכר לבלונדיניות. הבלונדה שאלה: "אבל איך כל פעם עלית על זה שאני בלונדינית?!" אז ענה המוכר: "כי רק בלונדיניות מצביעות על מיקרוגל ומבקשות טלויזיה!!! </SPANText>
-             </Roll>
-             <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faStore}></FontAwesomeIcon></BLUTTEXT>
-            <h4>כלכלה</h4>
-            <SPANText>קניבל אחד הולך לקולנוע עם איזה ילד קטן כשהם מגיעים לקולנוע הכרטיסן מבקש מהקניבל את הכרטיסים על שתיהם הקניבל מביא לכרטיסן כרטיס אחד אז הכרטיסן אומר לו מה אתה עובד עלי חסר עוד כרטיס אז הקניבל עונה לו מה אסור להביא חטיפים? חח </SPANText>
-             </Roll>
-             <Roll><BLUTTEXT style={{color:TextColor.TextColor}}><FontAwesomeIcon icon={faPen}></FontAwesomeIcon></BLUTTEXT>
-            <h4>לא יודע</h4>
-            <SPANText>שני כורדים הולכים בגן ציבורי פתאום הם רואים כורדי אחד שיושב בתוך קיאק וחותר עם משוטים על הדשא. הכורדי אומר לחבר שלו: תראה את הדפוק הזה חותר באמצע הדשא רק בגללו צוחקים הרבה על הכורדים. עונה לו הכורדי השני: תאמין יש לו מזל אם היה לי בגד ים הייתי נכנס ודופק לו מכות...  </SPANText>
-             </Roll>
-             
-             <PHOTOSCONTAINER>
-                             <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt=""/>
-                             <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt=""/>
-                             <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt=""/>
-            </PHOTOSCONTAINER>
-           
-        </CONTAINER>
+                    </SPANText>
+
+                </Details>
+                <WhatIDo>
+                    <h2 >מה <BLUTTEXT style={{ color: TextColor.TextColor }}>אני עושה</BLUTTEXT> </h2>
+                </WhatIDo>
+                <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
+                    <h4>פיתוח תוכנה </h4>
+                    <SPANText  >
+                        התחלתי ללמוד פיתוח כי בהתחלה שהתחלתי להתעניין בכל עולם המחשבים הזה  דמיינתי את עצמי מפתח איזה תוכנה או משחק שאחד מהמשפחה או מהחברים ישתמש בה והלהיב אותי הרעיון שאני אוכל יום אחד לשבת ליד חבר או משפחה והוא ישתמש במשהו שאני עזרתי ליצור וזה בעיקרון החלום לפתח משהו שיעזור  לאנשים או אפילו משחק שיביא קצת שמחה לאנשים 
+                        ופשוט לשבת בצד ולהיות גאה במשהו שאני עזרתי ליצור 
+                    </SPANText>
+                </Roll>
+                <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
+                    <h4>ניהול</h4>
+                    <SPANText> בשירות הצבאי שלי תפקדתי בתור מש"ק בינוי ביחידת עוקץ שבו הייתי אחראי על 4 או 5 אזרחים עובדי צה"ל הייתי אחראי על קליטה של תקלות בינוי בתוך היחידה והייתי אחראי על למיין את סדר העדיפויות לפי שיקול דעתי ולטפל במה שאני חושב שיותר דחוף הייתי אחראי על תפקודם של האזרחים עובדי צהל הייתי מוודא הגעה ומנהל להם את הלוח מזמנם שולח אותם לכל מיני עבודות ובמקרים שיש תקלות שאותם הארבעה עובדים אינם יכולים לטפל הייתי מביא עוד עובד חיצוני הייתי דואג לבמחסנים וגם מזמין סחורה  חדשה במקרים שצריך וכל זה עשיתי לבד במשך שנה וחצי</SPANText>
+                </Roll>
+               
+
+                <PHOTOSCONTAINER>
+                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                </PHOTOSCONTAINER>
+
+            </CONTAINER>
         </div>
     )
 }

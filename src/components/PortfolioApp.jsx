@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import Main from './Main/Main';
 import { NIGHMODE,DAYMODE } from './RightSideContent/PortfolioContent';
 import { PROVIDECONTEXT } from './RightSideContent/contexthook';
-import { FaFacebook, FaInstagram, FaLinkedin,FaGithub } from 'react-icons/fa';
-import Header from './Header/Header';
+import Footer from './features/Footer/Footer';
+import Header from './features/Header/Header';
+import { Input } from './features/Input/Input.jsx';
   const CONTAINERDIV = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,26 +13,8 @@ import Header from './Header/Header';
   width: 100vw;
   height: 100vh;
   `
-//   const PROGRAM = styled.img`
-// width: 20px;
-// height: 20px;
-// border-radius: 50%;
-// margin-top: 5px;
-// `
-//   const Header = styled.header`
-// display: flex;
-// justify-content: center;
-// justify-content:space-evenly;
-// color: white;
-// `
 
-  const Footer = styled.footer`
-height: 5%;
-width: 100%;
-display: flex;
-justify-content: center;
-justify-content: space-evenly;
-`
+
 
 export default function PortfolioApp(){
     const [COLORMode, setCOLORMode] = useState(DAYMODE)
@@ -64,7 +47,8 @@ export default function PortfolioApp(){
     SwitchColor: COLORMode.SwitchColor,
     Headr: COLORMode.Header,
     Footer: COLORMode.Footer,
-    LeftSideButtonShow:COLORMode.LeftSideBttonShow
+    LeftSideButtonShow:COLORMode.LeftSideBttonShow,
+    ButtonText:COLORMode.ButtonText
   }
 
     return (
@@ -75,14 +59,8 @@ export default function PortfolioApp(){
     
               <Main className="main_portfolio"></Main>
             </PROVIDECONTEXT>
-          </div>
-    
-          <Footer style={{ backgroundColor: COLORobj.Footer,opacity:'0.7'  }}>  <a style={{ color: "#4267B2" }} target='blank' href="https://www.facebook.com/iascc.kasay/"><FaFacebook />  </a>
-            <a style={{ color: "#FD1D1D" }} target='blank' href="https://www.instagram.com/itzhak_kasie17/"><FaInstagram /> </a>
-            <a style={{ color: "#2867B2" }} target='blank' href="https://www.linkedin.com/in/itzhak-kasie-01457b203/"> <FaLinkedin /></a>
-            <a style={{ color: "#2867B2" }} target='blank' href="https://github.com/itzhak12380"> <FaGithub/>  </a>
-            
-          </Footer>
+          </div>     
+          <Footer footer={COLORobj.Footer}/>
         </CONTAINERDIV>
       );
 }

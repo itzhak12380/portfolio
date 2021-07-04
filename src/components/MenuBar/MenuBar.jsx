@@ -21,10 +21,7 @@ width: fit-content;
 height: fit-content;
 background-color: inherit;
 border: 0px;
-/* &:hover .myfont {
-  background-color: black;
-  color: #3691e6;
-    } */
+
 `
 const MenuBarContainer = styled.div`
 display: flex;
@@ -46,18 +43,17 @@ const IconsArray = [
   { icon: faUserGraduate, id: "ResumePage", index: 2 },
   { icon: faBriefcase, id: "PortfolioPage", index: 3 },
   { icon: faEnvelope, id: "ContactPage", index: 4 },
-  // { icon: faUser, id: "user2"},
 ];
 
-function MenuBar({ currentScreen, selectScreen }) {
+function MenuBar(props,{ currentScreen, selectScreen }) {
   return (
     <MenuBarContainer>
-      <Sidebar className="menu-bar">
+      <Sidebar className="menu-bar" >
         <div style={{ width: "fit-content", width: "40%" }}>
           {IconsArray.map
             (({ icon, id, index }) => {
               const style = { width: "60%", borderRadius: "50%", color: id === currentScreen ? "green" : "" };
-              return (<NavLink key={index} style={{color:'#dd2020'}} activeStyle={{
+              return (<NavLink key={index} style={{color:props.Iconolor}} activeStyle={{
                 fontWeight: "bold",
                 color: "white"
               }}
@@ -65,10 +61,9 @@ function MenuBar({ currentScreen, selectScreen }) {
             })}
         </div>
       </Sidebar>
-
       <div style={{ width: "fit-content", width: "40%" }}>
-        <NavLink to=""><FontAwesomeIcon style={{ width: "100%",color:'#dd2020' }} icon={faArrowCircleDown} /></NavLink>
-        <NavLink to=""><FontAwesomeIcon style={{ width: "100%",color:'#dd2020' }} icon={faArrowCircleUp} />
+        <NavLink to=""><FontAwesomeIcon style={{ width: "100%",color:props.Iconolor }} icon={faArrowCircleDown} /></NavLink>
+        <NavLink to=""><FontAwesomeIcon style={{ width: "100%",color:props.Iconolor }} icon={faArrowCircleUp} />
         </NavLink>
       </div>
     </MenuBarContainer>

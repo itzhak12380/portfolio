@@ -1,29 +1,18 @@
 import React from "react";
 import './Main.css'
 import styled from 'styled-components';
-import Rigthside from '../RightSide/RightSide.jsx'
 import MenuBar from '../MenuBar/MenuBar.jsx'
-import { useState,createContext } from "react";
-import PageComponent from "../RightSideContent/Home/Home";
-import AboutMe from "../RightSideContent/About-me/About-me";
+import { useState,createContext,useMemo } from "react";
 import { HebrowContent,EnglishContent } from "../RightSideContent/PortfolioContent/index";
-import PortfolioPage from "../RightSideContent/PORTFOLIO";
-import ResumePage from "../RightSideContent/RESUME";
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
-import { EnglishAboutMe } from "../RightSideContent/PortfolioContent/AboutMe";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleDown, faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
-import ContactPage from "../RightSideContent/CONTACT";
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Button from '@material-ui/core/Button';
-
+import { Switches } from "../RightSideContent/PortfolioContent/AboutMe";
+import { UseMyContext } from "../RightSideContent/contexthook";
+import { EnglishPortfolio } from "../RightSideContent/PortfolioContent/PortfolioContent";
+import { ContactPage } from "../RightSideContent/PortfolioContent/ContactUs";
 const MainDivLayout = styled.div`
 width:85%;
 height:85% ;
-background-color: #555252;
-border-radius: 22%;
-/* border-radius: 15px; */
+
 position: absolute;
 display: flex;
 justify-content: center;
@@ -39,23 +28,14 @@ grid-template-areas:
 grid-template-columns:  20% 40% 30% 10%;
 `
 const RightSideLayout = styled.div`
-background-color: #2e2b2b;
 position: relative;
-border-radius: 4%;
 box-sizing: border-box;
 overflow: scroll;
-/* display: flex;
-flex-wrap: wrap; */
 grid-area: main;
-/* display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap; */
+
 `
 const LeftSideLayout = styled.div`
-background-color: #555252;
 position: relative;
-border-radius: 4%;
 box-sizing: border-box;
 grid-area: left;
 overflow: scroll;
@@ -65,7 +45,6 @@ justify-content: center;
 const SidebarLayout = styled.div`
 position: relative;
 grid-area: sidebar;
-background-color: #4e77e7;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -77,10 +56,10 @@ justify-content: space-between;
 // { icon: faBriefcase, id: "briefcase"},
 // { icon: faEnvelope, id: "envelope"},
 // { icon: faUser, id: "user2"},
-const screenIdToComponent = {
-  home: Rigthside,
-  user: AboutMe,
-};
+// const screenIdToComponent = {
+//   home: Rigthside,
+//   user: AboutMe,
+// };
 
 function NotFound() {
   return <div>Not found</div>;
@@ -91,53 +70,61 @@ export const Language = createContext()
 export default function Main() {
    
   
-  const [LanguageState, setLanguageState] = useState(HebrowContent)
+  const [LanguageState, setLanguageState] = useState(EnglishContent)
   const ProvideLanguage = Language.Provider
   function ChangeLanguage(){
-    if (LanguageState === EnglishContent ) {
+    if (LanguageState === HebrowContent ) {
       
-      setLanguageState( HebrowContent)
-    }
-    else{
       setLanguageState( EnglishContent)
     }
+    else{
+      setLanguageState( HebrowContent)
+    }
   }
+  useMemo(() => LanguageState, ChangeLanguage)
+  const ColoModeController = UseMyContext();
   return (
     <ProvideLanguage value={LanguageState}>
     <Router>
-    <MainDivLayout className="main">
+    <MainDivLayout  style={{backgroundColor:ColoModeController.MainDiv}} className="main">
    
-      <LeftSideLayout>
+      <LeftSideLayout style={{backgroundColor:ColoModeController.LeftSide}} >
         {/* <Leftside /> */}
-        {LanguageState.LeftSide()}
+        <LanguageState.LeftSide/>
+        {/* {LanguageState.LeftSide()} */}
       </LeftSideLayout>
-      <RightSideLayout>
+      <RightSideLayout style={{backgroundColor:ColoModeController.RightSide}}>
          <Switch>
-       <Route path="/home">
-        <PageComponent />
+       <Route className="animate__backInLeft" path="/home">
+        
+          <LanguageState.Home/>
+       
         {/* <PageComponent /> */}
        </Route>
        <Route path="/AboutMe">
-         <EnglishAboutMe />
+         <div className="animate__backInLeft"> <LanguageState.AboutMe /> </div>
+         
          {/* <PageComponent Componenta={LanguageState.Resume()}/> */}
        </Route>
        <Route path="/ContactPage">
-         <ContactPage />
+         <LanguageState.ContactUs />
        </Route>
        <Route path="/PortfolioPage">
-         <PortfolioPage/>
+         <LanguageState.Portfolio/>
        </Route>
        <Route path="/ResumePage">
-          <ResumePage/>
+          {/* <ResumePage/> */}
+          <LanguageState.Resume />
        </Route>
        <Route>
        <NotFound />
        </Route>
        </Switch>
       </RightSideLayout>
-      <SidebarLayout >
-        <MenuBar />
-        <button onClick={ChangeLanguage}>{LanguageState.Button}</button>
+      <SidebarLayout style={{backgroundColor:ColoModeController.sidebar}} >
+        <MenuBar Iconolor={ColoModeController.icon} />        
+        <Switches style={{backgroundColor:'red'}} ChnageLanguage={ColoModeController.body} Language="change color" />
+        <Switches ChnageLanguage={ChangeLanguage} Language={LanguageState.Button} />
       </SidebarLayout>
     </MainDivLayout></Router>
     </ProvideLanguage>

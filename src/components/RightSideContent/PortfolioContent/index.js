@@ -43,7 +43,8 @@ export const DAYMODE = {
     SwitchColor:'black',
     Header:"black",
     Footer:"black",
-    LeftSideBttonShow:"black"
+    LeftSideBttonShow:"black",
+    ButtonText:"night mode"
 }
 // '#c4cfde'
 export const NIGHMODE = {
@@ -60,5 +61,7 @@ export const NIGHMODE = {
     SwitchColor:'#810000',
     Header:"#1B1717",
     Footer:"#1B1717",
-    LeftSideBttonShow:"white"
+    LeftSideBttonShow:"white",
+    ButtonText:"day mode"
+
 }

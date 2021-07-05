@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaMailBulk, FaAt, FaEnvelope } from 'react-icons/fa';
 import { UseMyContext } from "../contexthook";
 import emailjs from 'emailjs-com';
-
+import { Input } from "../../features/Input/Input";
 const FORMBODY = styled.div`
     min-height: 100%;
       padding: 0;
@@ -94,9 +94,9 @@ export function EnglishContactPage() {
         <FORM onSubmit={sendEmail} action="">
           <H1>contact us</H1>
           <div className='info'>
-            <input ref={InputRef} className="fname" type="text" name="name" placeholder="Full name"></input>
-            <input  type="text" name="email" placeholder="Email" />
-            <input type="text" name="phone" placeholder="Phone number" />
+            <Input Ref={InputRef} className="fname" type="text" name="name" placeholder="Full name"></Input>
+            <Input  type="text" name="email" placeholder="Email" />
+            <Input type="text" name="phone" placeholder="Phone number" />
           </div>
           <p>Message</p>
           <div>
@@ -133,13 +133,13 @@ export function HebrowContactPage() {
             <ICONSTYLE><FaAt /></ICONSTYLE>
             <ICONSTYLE style={{ transform: 'rotate(-20deg)' }}><FaEnvelope /></ICONSTYLE>
           </LEFTSIDE>
-  
+  <button></button>
           <FORM onSubmit={sendEmail} action="">
             <H1>צרו קשר</H1>
             <div className='info'>
-              <input ref={InputRef} className="fname" type="text" name="name" placeholder="שם מלא"></input>
-              <input type="text" name="email" placeholder="כתובת אימייל" />
-              <input type="text" name="phone" placeholder=" מספר טלפון" />
+              <Input Ref={InputRef} className="fname" type="text" name="name" placeholder="שם מלא"></Input>
+              <Input type="text" name="email" placeholder="כתובת אימייל" />
+              <Input type="text" name="phone" placeholder=" מספר טלפון" />
             </div>
             <p>הודעה</p>
             <div>

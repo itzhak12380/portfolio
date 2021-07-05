@@ -131,7 +131,7 @@ export function EnglishAboutMe() {
                 </Roll>
                 <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
                     <h4>Management</h4>
-                    <SPANText>doring my years in the IDF where I served in oketz unit my job was to manage a group of five to four people that wer a civilian workers inside a miltery base i was incharge of assiigning them work and to track problems and assign the workers the fix them as soon as possible i was i charge of the stock and to make sure the workers will allways have tools to work whit so whenever neded I would buy soplie to keep them working </SPANText>
+                    <SPANText>Doring my years in the IDF where I served in oketz unit my job was to manage a group of five to four people that wer a civilian workers inside a miltery base i was incharge of assiigning them work and to track problems and assign the workers the fix them as soon as possible i was i charge of the stock and to make sure the workers will allways have tools to work whit so whenever neded I would buy soplie to keep them working </SPANText>
                 </Roll>
             
 

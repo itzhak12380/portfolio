@@ -26,7 +26,7 @@ const TITLE = styled.span`
 font-size: 15px;
 font-weight: lighter;
 `
-const PicturesArray = ["./Pictures/f5fb162a-cb32-4f52-8714-b30c675f10c0.jpg","./Pictures/טק-קריירה-יוםכיף.jpeg"]
+const PicturesArray = ["/portfolio/Pictures/f5fb162a-cb32-4f52-8714-b30c675f10c0.jpg","/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg"]
 
 function LeftSideHbrow() {
   const [Photo, setPhoto] = useState(0)

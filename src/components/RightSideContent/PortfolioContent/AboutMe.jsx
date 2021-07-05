@@ -99,19 +99,20 @@ export function EnglishAboutMe() {
                 <AboutME>
                     <h1 >about <BLUTTEXT style={{ color: TextColor.TextColor }}>me</BLUTTEXT> </h1>
                     <SPANText style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                       Hi I am Itzhak Kasie and i am a 22 years old from the city of bat yam i realy love sport especially footbal I like Playing (and i pretty good at it) and watching footbal and  i love doing any kinde of sport i like to run somtimes it clears my minde i like to just sit and drink coffe and hear music for five minuts in the morning
+                        Hi, I am Itzhak Kasie and I am a 22 years old from the city of Bat-Yam.
+                        I really love sports, especially football. I like playing football, as  I am pretty good at it and I also enjoy  watching the game. {<br />}  I enjoy  most type of sports. I especially like to run somtimes, as it helps clears my mind. For relaxation, I enjoy my morning coffee while listning to some music.
                     </SPANText>
                 </AboutME>
                 <Details>
                     <SPANText>
 
-                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>age</BLUTTEXT> :</h3> <SPANText >23</SPANText>
+                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>age</BLUTTEXT> :</h3> <SPANText >22</SPANText>
                         <br />
-                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>Residence</BLUTTEXT> :</h3> <SPANText >USA</SPANText>
+                        <h3 style={{ display: 'inline' }}> <BLUTTEXT style={{ color: TextColor.TextColor }}>Residence</BLUTTEXT> :</h3> <SPANText >Israel</SPANText>
                         <br />
-                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>Address</BLUTTEXT>  :</h3> <SPANText >88 Some Street, Some Town</SPANText>
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>Address</BLUTTEXT>  :</h3> <SPANText >Dalia 2 Bat Yam</SPANText>
                         <br />
-                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>e-mail</BLUTTEXT>  :</h3> <SPANText  >email@example.com</SPANText>
+                        <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>e-mail</BLUTTEXT>  :</h3> <SPANText  >Itzhak2380@email.com</SPANText>
                         <br />
                         <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>Phone</BLUTTEXT>  :</h3> <SPANText >0546865601</SPANText>
 
@@ -125,20 +126,28 @@ export function EnglishAboutMe() {
                 <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
                     <h4>Software Developer</h4>
                     <SPANText>
-                        Ever sence my computers intrest started to grow i know that if I will ever Do somthing relating to computers I Know that i will be a developer it was always a dream of mine to desgin and to create a product that will help other people in any possible way 
-                        my biggst dream is to see some family or a friend of mine use somthing that i help build 
+                        When my intrest in copmuters began I knew that I would want to develope software. It was always my dream to design a prodoct that would be helpful to others.
+                        My biggst dream is to see a family member or a friend use
+                        a product that I helped develop.
                     </SPANText>
                 </Roll>
                 <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
                     <h4>Management</h4>
-                    <SPANText>Doring my years in the IDF where I served in oketz unit my job was to manage a group of five to four people that wer a civilian workers inside a miltery base i was incharge of assiigning them work and to track problems and assign the workers the fix them as soon as possible i was i charge of the stock and to make sure the workers will allways have tools to work whit so whenever neded I would buy soplie to keep them working </SPANText>
+                    <SPANText>
+                        During my years in the IDF, I served in the Oketz unit.
+                        My job was to manage four to five civilin workers on the base.
+                        My task was to assign them work and track any issues that would arise
+                        whith military logistics.
+                        I would assign workers to immediately repair any issues.
+                        I was also responsible to make sure the workers always had the tools they needed for their various tasks while taking finances of the project into considration.
+                    </SPANText>
                 </Roll>
-            
+
 
                 <PHOTOSCONTAINER>
-                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
-                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
-                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
                 </PHOTOSCONTAINER>
 
             </CONTAINER>
@@ -155,7 +164,7 @@ export function HebrowAboutMe() {
                 <AboutME>
                     <h1 >על <REDTEXT style={{ color: TextColor.TextColor }}>עצמי</REDTEXT> </h1>
                     <SPANText style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                        אני יצחק קסיה בן 22 אני מאוד אוהב ספורט במיוחד כדורגל אני אוהב לראות כדורגל ולשחק כדורגל  (ואני די טוב בזה) וחוץ מזה אני אוהב לשחק בכל סוגי הספורט אני אוהב לעשות ריצות לטייל לקרוא ספרים ופשוט לבלות עם משפחה וחברים 
+                        אני יצחק קסיה בן 22 אני מאוד אוהב ספורט במיוחד כדורגל אני אוהב לראות כדורגל ולשחק כדורגל  (ואני די טוב בזה) וחוץ מזה אני אוהב לשחק בכל סוגי הספורט אני אוהב לעשות ריצות לטייל לקרוא ספרים ופשוט לבלות עם משפחה וחברים
                     </SPANText>
                 </AboutME>
                 <Details>
@@ -181,20 +190,20 @@ export function HebrowAboutMe() {
                 <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
                     <h4>פיתוח תוכנה </h4>
                     <SPANText  >
-                        התחלתי ללמוד פיתוח כי בהתחלה שהתחלתי להתעניין בכל עולם המחשבים הזה  דמיינתי את עצמי מפתח איזה תוכנה או משחק שאחד מהמשפחה או מהחברים ישתמש בה והלהיב אותי הרעיון שאני אוכל יום אחד לשבת ליד חבר או משפחה והוא ישתמש במשהו שאני עזרתי ליצור וזה בעיקרון החלום לפתח משהו שיעזור  לאנשים או אפילו משחק שיביא קצת שמחה לאנשים 
-                        ופשוט לשבת בצד ולהיות גאה במשהו שאני עזרתי ליצור 
+                        התחלתי ללמוד פיתוח כי בהתחלה שהתחלתי להתעניין בכל עולם המחשבים הזה  דמיינתי את עצמי מפתח איזה תוכנה או משחק שאחד מהמשפחה או מהחברים ישתמש בה והלהיב אותי הרעיון שאני אוכל יום אחד לשבת ליד חבר או משפחה והוא ישתמש במשהו שאני עזרתי ליצור וזה בעיקרון החלום לפתח משהו שיעזור  לאנשים או אפילו משחק שיביא קצת שמחה לאנשים
+                        ופשוט לשבת בצד ולהיות גאה במשהו שאני עזרתי ליצור
                     </SPANText>
                 </Roll>
                 <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faFlag}></FontAwesomeIcon></BLUTTEXT>
                     <h4>ניהול</h4>
                     <SPANText> בשירות הצבאי שלי תפקדתי בתור מש"ק בינוי ביחידת עוקץ שבו הייתי אחראי על 4 או 5 אזרחים עובדי צה"ל הייתי אחראי על קליטה של תקלות בינוי בתוך היחידה והייתי אחראי על למיין את סדר העדיפויות לפי שיקול דעתי ולטפל במה שאני חושב שיותר דחוף הייתי אחראי על תפקודם של האזרחים עובדי צהל הייתי מוודא הגעה ומנהל להם את הלוח מזמנם שולח אותם לכל מיני עבודות ובמקרים שיש תקלות שאותם הארבעה עובדים אינם יכולים לטפל הייתי מביא עוד עובד חיצוני הייתי דואג לבמחסנים וגם מזמין סחורה  חדשה במקרים שצריך וכל זה עשיתי לבד במשך שנה וחצי</SPANText>
                 </Roll>
-               
+
 
                 <PHOTOSCONTAINER>
-                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
-                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
-                    <PHOTOS src="./Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
+                    <PHOTOS src="/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg" alt="" />
                 </PHOTOSCONTAINER>
 
             </CONTAINER>

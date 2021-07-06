@@ -86,7 +86,7 @@ export function LeftSideEnglish() {
 
       </div>
       <br />
-      <Alink target="blank" href="https://workupload.com/file/hRCZAs5qQsQ"><Button style={{borderRadius:'20px',height:'fitContent',width:'90px',padding:'5px',border:'none',backgroundColor:'#EEEBDD',boxShadow:`0 2px 5px ${ColorContext.LeftSideButtonShow}`}} Text = 'Download CV'> </Button></Alink>  
+      <a target="blank" href="https://workupload.com/file/hRCZAs5qQsQ"><Button style={{borderRadius:'20px',height:'fitContent',width:'90px',padding:'5px',border:'none',backgroundColor:'#EEEBDD',boxShadow:`0 2px 5px ${ColorContext.LeftSideButtonShow}`}} Text = 'Download CV'> </Button></a>  
     </Leftside>
   )
 }

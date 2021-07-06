@@ -26,7 +26,7 @@ const TITLE = styled.span`
 font-size: 15px;
 font-weight: lighter;
 `
-const PicturesArray = ["./Pictures/f5fb162a-cb32-4f52-8714-b30c675f10c0.jpg","./Pictures/טק-קריירה-יוםכיף.jpeg"]
+const PicturesArray = ["/portfolio/Pictures/f5fb162a-cb32-4f52-8714-b30c675f10c0.jpg","/portfolio/Pictures/טק-קריירה-יוםכיף.jpeg"]
 
 function LeftSideHbrow() {
   const [Photo, setPhoto] = useState(0)
@@ -86,7 +86,7 @@ export function LeftSideEnglish() {
 
       </div>
       <br />
-      <Alink target="blank" href="https://workupload.com/file/hRCZAs5qQsQ"><Button style={{borderRadius:'20px',height:'fitContent',width:'90px',padding:'5px',border:'none',backgroundColor:'#EEEBDD',boxShadow:`0 2px 5px ${ColorContext.LeftSideButtonShow}`}} Text = 'Download CV'> </Button></Alink>  
+      <a target="blank" href="https://workupload.com/file/hRCZAs5qQsQ"><Button style={{borderRadius:'20px',height:'fitContent',width:'90px',padding:'5px',border:'none',backgroundColor:'#EEEBDD',boxShadow:`0 2px 5px ${ColorContext.LeftSideButtonShow}`}} Text = 'Download CV'> </Button></a>  
     </Leftside>
   )
 }

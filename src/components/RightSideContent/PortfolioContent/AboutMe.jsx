@@ -176,7 +176,7 @@ export function HebrowAboutMe() {
                         <br />
                         <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>כתובת</BLUTTEXT>  :</h3> <SPANText >דליה 2 בת ים</SPANText>
                         <br />
-                        <SPANText  >email@example.com  :</SPANText><h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}> כתובת אימייל</BLUTTEXT> </h3>
+                        <SPANText  >itzhak2380@gmail.com  :</SPANText><h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}> כתובת אימייל</BLUTTEXT> </h3>
                         <br />
                         <h3 style={{ display: 'inline' }}><BLUTTEXT style={{ color: TextColor.TextColor }}>טלפון</BLUTTEXT>  :</h3> <SPANText >0546865601</SPANText>
 

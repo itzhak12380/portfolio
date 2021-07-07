@@ -45,7 +45,7 @@ function LeftSideHbrow() {
 
       <MyImg src={PicturesArray[Photo]} alt="" />
 
-
+      <h1>featurs one</h1>
       <NAME> יצחק קסיה</NAME>
       <TITLE>  מפתח תוכנה</TITLE>
       <br />

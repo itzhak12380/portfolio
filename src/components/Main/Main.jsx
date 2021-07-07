@@ -98,7 +98,9 @@ export default function Main() {
           <LanguageState.Resume />
        </Route>
        <Route>
-       <NotFound />
+       <LanguageState.Home/>      
+
+       {/* <NotFound /> */}
        </Route>
        </Switch>
       </RightSideLayout>

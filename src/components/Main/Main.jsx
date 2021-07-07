@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Sidebar from '../features/SideBar/SideBar.jsx'
 import { useState,createContext,useMemo } from "react";
 import { HebrowContent,EnglishContent } from "../RightSideContent/PortfolioContent/index";
-import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
+import { HashRouter as Router,Switch,Route } from "react-router-dom";
 import { Switches } from "../RightSideContent/PortfolioContent/AboutMe";
 import { UseMyContext } from "../RightSideContent/contexthook";
 import Button from "../features/Button/Button";

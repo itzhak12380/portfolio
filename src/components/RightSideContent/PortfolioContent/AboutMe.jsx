@@ -126,7 +126,10 @@ export function EnglishAboutMe() {
                 <Roll><BLUTTEXT style={{ color: TextColor.TextColor }}><FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon></BLUTTEXT>
                     <h4>Software Developer</h4>
                     <SPANText>
-                        When my intrest in copmuters began I knew that I would want to develope software. It was always my dream to design a prodoct that would be helpful to others.
+                        When my intrest in copmuters began I knew that I would want to develope software. 
+                        <br />
+                        It was always my dream to design a prodoct that would be helpful to others.
+                        <br />
                         My biggst dream is to see a family member or a friend use
                         a product that I helped develop.
                     </SPANText>

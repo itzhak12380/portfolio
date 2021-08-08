@@ -203,38 +203,29 @@ export function EnglishResume() {
                     <h4>server side</h4>
                     <SkilBarStyle>
                         <span> C# </span>
-                        <span>70% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                        <span>90% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={70} />
 
                     <SkilBarStyle>
                         <span> Node Js </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                        <span>97% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
-                    <SkilsBar percentage={0} />
-                    <SkilBarStyle>
-                        <span> database </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={0} />
+                    <SkilsBar percentage={97} />
 
 
                     <h4>data base</h4>
                     <SkilBarStyle>
                         <span> MongoDB </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                        <span>80% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
-                    <SkilsBar percentage={0} />
+                    <SkilsBar percentage={80} />
+                
                     <SkilBarStyle>
-                        <span> Angular </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
+                        <span> MySql </span>
+                        <span>87% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
-                    <SkilsBar percentage={0} />
-                    <SkilBarStyle>
-                        <span> Jquery </span>
-                        <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
-                    </SkilBarStyle>
-                    <SkilsBar percentage={0} />
+                    <SkilsBar percentage={87} />
 
 
 

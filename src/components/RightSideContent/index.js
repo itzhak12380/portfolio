@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { EnglishHomeContent, HebrowHomeContent } from './HomeContent'
-import LeftSideHbrow from '../../LeftSide/LeftSide'
-import { LeftSideEnglish } from '../../LeftSide/LeftSide'
-import { HebrowResume, EnglishResume } from './ResumeContent'
-import { HebrowAboutMe, EnglishAboutMe } from './AboutMe'
-import { HebrowContactPage,EnglishContactPage } from './ContactUs'
-import {HebrowPortfolio,EnglishPortfolio} from './PortfolioContent'
+import { EnglishHomeContent, HebrowHomeContent } from '../RightSideContent/PortfolioContent/HomeContent'
+import LeftSideHbrow from '../LeftSide/LeftSide'
+import { LeftSideEnglish } from '../LeftSide/LeftSide'
+import { HebrowResume, EnglishResume } from '../RightSideContent/PortfolioContent/ResumeContent'
+import { HebrowAboutMe, EnglishAboutMe } from '../RightSideContent/PortfolioContent/AboutMe'
+import { HebrowContactPage,EnglishContactPage } from '../RightSideContent/PortfolioContent/ContactUs'
+import {HebrowPortfolio,EnglishPortfolio} from '../RightSideContent/PortfolioContent/PortfolioContent'
 
 export const EnglishContent = {
     Button: "עברית",
@@ -44,9 +44,8 @@ export const DAYMODE = {
     Header:"black",
     Footer:"black",
     LeftSideBttonShow:"black",
-    ButtonText:"night mode"
+    ButtonText:"dark"
 }
-// '#c4cfde'
 export const NIGHMODE = {
     body: '#1B1717',
     mainDiv:'#1B1717',
@@ -62,6 +61,6 @@ export const NIGHMODE = {
     Header:"#1B1717",
     Footer:"#1B1717",
     LeftSideBttonShow:"white",
-    ButtonText:"day mode"
+    ButtonText:"bright"
 
 }

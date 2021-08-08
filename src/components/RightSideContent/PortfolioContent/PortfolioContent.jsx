@@ -20,7 +20,6 @@ height: 200px;
 const PROJECTSDIV = styled.div`
 width: 100%;
 display: flex;
-/* flex-direction: column; */
 flex-wrap: wrap;
 justify-content: space-between;
 `

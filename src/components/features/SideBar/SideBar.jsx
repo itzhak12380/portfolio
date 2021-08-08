@@ -49,7 +49,7 @@ function Sidebar(props,{ currentScreen, selectScreen }) {
   return (
     <MenuBarContainer>
       <SideBar className="menu-bar" >
-        <div style={{ width: "fit-content", width: "40%" }}>
+        <div style={{ width: "fit-content"}}>
           {IconsArray.map
             (({ icon, id, index }) => {
               const style = { width: "60%", borderRadius: "50%", color: id === currentScreen ? "green" : "" };
@@ -57,15 +57,11 @@ function Sidebar(props,{ currentScreen, selectScreen }) {
                 fontWeight: "bold",
                 color: "white"
               }}
-                to={`/${id}`} ><FontAwesomeIcon className="myfont" style={style} icon={icon}></FontAwesomeIcon></NavLink>)
+                to={`/${id}`} ><FontAwesomeIcon  style={style} icon={icon}></FontAwesomeIcon></NavLink>)
             })}
         </div>
-      </SideBar>
-      <div style={{ width: "fit-content", width: "40%" }}>
-        <NavLink to=""><FontAwesomeIcon style={{ width: "100%",color:props.Iconolor }} icon={faArrowCircleDown} /></NavLink>
-        <NavLink to=""><FontAwesomeIcon style={{ width: "100%",color:props.Iconolor }} icon={faArrowCircleUp} />
-        </NavLink>
-      </div>
+     </SideBar>
+
     </MenuBarContainer>
   );
 };

@@ -1,17 +1,14 @@
 import React, { useState, useMemo } from 'react'
 import styled from 'styled-components';
 import Main from './Main/Main';
-import { NIGHMODE,DAYMODE } from './RightSideContent/PortfolioContent';
+import { NIGHMODE,DAYMODE } from './RightSideContent';
 import { PROVIDECONTEXT } from './RightSideContent/contexthook';
-import Footer from './features/Footer/Footer';
-import Header from './features/Header/Header';
-import { Input } from './features/Input/Input.jsx';
   const CONTAINERDIV = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   `
 
 
@@ -32,7 +29,7 @@ export default function PortfolioApp(){
   useMemo(() => COLORMode,
 
     [ChangeColorMode])
-  const COLORobj = {
+  const Color_Objcet = {
     body: ChangeColorMode,
     bodyColor: COLORMode.body,
     sidebar: COLORMode.sidebar,
@@ -52,15 +49,13 @@ export default function PortfolioApp(){
   }
 
     return (
-        <CONTAINERDIV style={{ backgroundColor: COLORobj.bodyColor, color: COLORobj.Color }} >
-          <Header HeaderColor={COLORobj.Headr}/>
+        <CONTAINERDIV style={{ backgroundColor: Color_Objcet.bodyColor, color: Color_Objcet.Color }} >
           <div style={{ height: '90%', width: '100%', display: 'flex', justifyContent: 'center' }}>
-            <PROVIDECONTEXT value={COLORobj}>
+            <PROVIDECONTEXT value={Color_Objcet}>
     
-              <Main className="main_portfolio"></Main>
+              <Main ></Main>
             </PROVIDECONTEXT>
           </div>     
-          <Footer footer={COLORobj.Footer}/>
         </CONTAINERDIV>
       );
 }

@@ -14,7 +14,7 @@ justify-content: center;
 flex-wrap: wrap;
 `
 const MyImg = styled.img`
-width: 70%;
+width: 100%;
 height: 30%;
 border-radius: 50%;
 `
@@ -39,7 +39,7 @@ function LeftSideHbrow() {
   const ColorContext = UseMyContext()
 
   return (
-    <Leftside className="left-side" >
+    <Leftside  >
    
 
 

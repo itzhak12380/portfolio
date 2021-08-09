@@ -49,7 +49,7 @@ const TEXTAREA = styled.textarea`
       margin-bottom: 20px;
       border: 1px solid #1c87c9;
       outline: none;
-      height: 180px;
+      height: 120px;
 
 `
 const BUTTON = styled.button`

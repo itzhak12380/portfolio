@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 
 
-export default function Button(props){
+export default function Button(props) {
 
-    return(
+    return (
         <button style={props.style} > {props.Text}</button>
     )
 }

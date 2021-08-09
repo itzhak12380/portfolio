@@ -220,7 +220,7 @@ export function EnglishResume() {
                         <span>80% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
                     <SkilsBar percentage={80} />
-                
+
                     <SkilBarStyle>
                         <span> MySql </span>
                         <span>87% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
@@ -295,8 +295,8 @@ export function HebrowResume() {
                             <TimelineContent><TIMELINEHEADER></TIMELINEHEADER>
                                 <TIMELINECARD >
                                     <span>
-                                        ברמן, מלון קראון פלאזה, בעזריאלי.                                    
-                                    </span>                     
+                                        ברמן, מלון קראון פלאזה, בעזריאלי.
+                                    </span>
                                 </TIMELINECARD>
                             </TimelineContent>
                         </TimelineItem>
@@ -311,7 +311,7 @@ export function HebrowResume() {
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent><TIMELINEHEADER>
-                                
+
                             </TIMELINEHEADER>
                                 <TIMELINECARD >
 
@@ -390,7 +390,7 @@ export function HebrowResume() {
                         <span> אנגולר  </span>
                         <span>0% <CircularProgress style={{ boxSizing: '12px', width: '12px', height: '12px' }} ></CircularProgress></span>
                     </SkilBarStyle>
-                    <SkilsBar percentage={0} />               
+                    <SkilsBar percentage={0} />
                 </RIGHTSIDE>
             </CONTAINER></div>
     )

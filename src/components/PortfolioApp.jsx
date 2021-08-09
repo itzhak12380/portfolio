@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react'
 import styled from 'styled-components';
 import Main from './Main/Main';
-import { NIGHMODE,DAYMODE } from './RightSideContent';
+import { NIGHMODE, DAYMODE } from './RightSideContent';
 import { PROVIDECONTEXT } from './RightSideContent/contexthook';
-  const CONTAINERDIV = styled.div`
+const CONTAINERDIV = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,8 +13,8 @@ import { PROVIDECONTEXT } from './RightSideContent/contexthook';
 
 
 
-export default function PortfolioApp(){
-    const [COLORMode, setCOLORMode] = useState(DAYMODE)
+export default function PortfolioApp() {
+  const [COLORMode, setCOLORMode] = useState(DAYMODE)
 
 
 
@@ -44,18 +44,18 @@ export default function PortfolioApp(){
     SwitchColor: COLORMode.SwitchColor,
     Headr: COLORMode.Header,
     Footer: COLORMode.Footer,
-    LeftSideButtonShow:COLORMode.LeftSideBttonShow,
-    ButtonText:COLORMode.ButtonText
+    LeftSideButtonShow: COLORMode.LeftSideBttonShow,
+    ButtonText: COLORMode.ButtonText
   }
 
-    return (
-        <CONTAINERDIV style={{ backgroundColor: Color_Objcet.bodyColor, color: Color_Objcet.Color }} >
-          <div style={{ height: '90%', width: '100%', display: 'flex', justifyContent: 'center' }}>
-            <PROVIDECONTEXT value={Color_Objcet}>
-    
-              <Main ></Main>
-            </PROVIDECONTEXT>
-          </div>     
-        </CONTAINERDIV>
-      );
+  return (
+    <CONTAINERDIV style={{ backgroundColor: Color_Objcet.bodyColor, color: Color_Objcet.Color }} >
+      <div style={{ height: '90%', width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <PROVIDECONTEXT value={Color_Objcet}>
+
+          <Main ></Main>
+        </PROVIDECONTEXT>
+      </div>
+    </CONTAINERDIV>
+  );
 }

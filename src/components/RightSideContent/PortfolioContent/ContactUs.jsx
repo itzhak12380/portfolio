@@ -79,7 +79,7 @@ export function EnglishContactPage() {
     InputRef.current.focus()
   }, [])
   return (
-    <FORMBODY style={{overflow:'scroll', height: '100vh', backgroundColor: BACKGROUDNCOLOR.Form }} className="animate__animated animate__slideInDown">
+    <FORMBODY style={{ overflow: 'scroll', height: '100vh', backgroundColor: BACKGROUDNCOLOR.Form }} className="animate__animated animate__slideInDown">
       <CONTAINER >
 
         <LEFTSIDE >
@@ -123,7 +123,7 @@ export function HebrowContactPage() {
     InputRef.current.focus()
   }, [])
   return (
-    <FORMBODY style={{overflow:'scroll', height: '100vh', backgroundColor: BACKGROUDNCOLOR.Form }} className="animate__animated animate__slideInDown">
+    <FORMBODY style={{ overflow: 'scroll', height: '100vh', backgroundColor: BACKGROUDNCOLOR.Form }} className="animate__animated animate__slideInDown">
       <CONTAINER >
         <LEFTSIDE >
           <ICONSTYLE><FaMailBulk /></ICONSTYLE>

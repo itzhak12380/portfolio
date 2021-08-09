@@ -4,8 +4,8 @@ import LeftSideHbrow from '../LeftSide/LeftSide'
 import { LeftSideEnglish } from '../LeftSide/LeftSide'
 import { HebrowResume, EnglishResume } from '../RightSideContent/PortfolioContent/ResumeContent'
 import { HebrowAboutMe, EnglishAboutMe } from '../RightSideContent/PortfolioContent/AboutMe'
-import { HebrowContactPage,EnglishContactPage } from '../RightSideContent/PortfolioContent/ContactUs'
-import {HebrowPortfolio,EnglishPortfolio} from '../RightSideContent/PortfolioContent/PortfolioContent'
+import { HebrowContactPage, EnglishContactPage } from '../RightSideContent/PortfolioContent/ContactUs'
+import { HebrowPortfolio, EnglishPortfolio } from '../RightSideContent/PortfolioContent/PortfolioContent'
 
 export const EnglishContent = {
     Button: "עברית",
@@ -13,8 +13,8 @@ export const EnglishContent = {
     LeftSide: LeftSideEnglish,
     Resume: EnglishResume,
     AboutMe: EnglishAboutMe,
-    ContactUs:EnglishContactPage,
-    Portfolio:EnglishPortfolio,
+    ContactUs: EnglishContactPage,
+    Portfolio: EnglishPortfolio,
 }
 
 export const HebrowContent = {
@@ -23,44 +23,44 @@ export const HebrowContent = {
     LeftSide: LeftSideHbrow,
     Resume: HebrowResume,
     AboutMe: HebrowAboutMe,
-    ContactUs:HebrowContactPage,
-    Portfolio:HebrowPortfolio,
+    ContactUs: HebrowContactPage,
+    Portfolio: HebrowPortfolio,
 
 
 }
 export const DAYMODE = {
     body: '#c4cfde',
-    mainDiv:'white',
+    mainDiv: 'white',
     sidebar: '#c4cfde',
     icon: 'black',
     color: 'black',
-    leftSide:'white',
-    rightSide:'#c4cfde',
+    leftSide: 'white',
+    rightSide: '#c4cfde',
     color: 'black',
-    form:'#1c87c9',
-    formButton:'#1c87c9',
-    TextColor:'#4e77e7',
-    SwitchColor:'black',
-    Header:"black",
-    Footer:"black",
-    LeftSideBttonShow:"black",
-    ButtonText:"dark"
+    form: '#1c87c9',
+    formButton: '#1c87c9',
+    TextColor: '#4e77e7',
+    SwitchColor: 'black',
+    Header: "black",
+    Footer: "black",
+    LeftSideBttonShow: "black",
+    ButtonText: "dark"
 }
 export const NIGHMODE = {
     body: '#1B1717',
-    mainDiv:'#1B1717',
+    mainDiv: '#1B1717',
     sidebar: '#1B1717',
     icon: '#810000',
-    leftSide:'#810000',
-    rightSide:'#1B1717',
+    leftSide: '#810000',
+    rightSide: '#1B1717',
     color: 'white',
-    form:'#1B1717',
-    formButton:'#810000',
-    TextColor:'#810000',
-    SwitchColor:'#810000',
-    Header:"#1B1717",
-    Footer:"#1B1717",
-    LeftSideBttonShow:"white",
-    ButtonText:"bright"
+    form: '#1B1717',
+    formButton: '#810000',
+    TextColor: '#810000',
+    SwitchColor: '#810000',
+    Header: "#1B1717",
+    Footer: "#1B1717",
+    LeftSideBttonShow: "white",
+    ButtonText: "bright"
 
 }

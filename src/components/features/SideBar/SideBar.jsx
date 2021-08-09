@@ -45,22 +45,22 @@ const IconsArray = [
   { icon: faEnvelope, id: "ContactPage", index: 4 },
 ];
 
-function Sidebar(props,{ currentScreen, selectScreen }) {
+function Sidebar(props, { currentScreen, selectScreen }) {
   return (
     <MenuBarContainer>
       <SideBar className="menu-bar" >
-        <div style={{ width: "fit-content"}}>
+        <div style={{ width: "fit-content" }}>
           {IconsArray.map
             (({ icon, id, index }) => {
               const style = { width: "60%", borderRadius: "50%", color: id === currentScreen ? "green" : "" };
-              return (<NavLink key={index} style={{color:props.Iconolor}} activeStyle={{
+              return (<NavLink key={index} style={{ color: props.Iconolor }} activeStyle={{
                 fontWeight: "bold",
                 color: "white"
               }}
-                to={`/${id}`} ><FontAwesomeIcon  style={style} icon={icon}></FontAwesomeIcon></NavLink>)
+                to={`/${id}`} ><FontAwesomeIcon style={style} icon={icon}></FontAwesomeIcon></NavLink>)
             })}
         </div>
-     </SideBar>
+      </SideBar>
 
     </MenuBarContainer>
   );

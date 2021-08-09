@@ -25,7 +25,7 @@ export function EnglishHomeContent(){
         
             <MainDiv className="animate__animated animate__backInDown" >
                 <div style={{width:'90%'}}>
-                    <H1NAME> Izthak Kasie</H1NAME>
+                    <H1NAME> Itzhak Kasie</H1NAME>
                 <JOBTITLE> {JobTitle}</JOBTITLE>
                 <span>I am 22 years old very ambitious and hard worker who wants to always learn and evolve and just be better then the pereson that i was the day before  
                     
